@@ -37,7 +37,7 @@ a \code{tbl_df} containing the following fields:
 }
 }
 \source{
-The data comes from________________________.
+The data was collected using Qualtrics.
 }
 \description{
 Detailed description of the data

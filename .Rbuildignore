@@ -1,2 +1,3 @@
 ^inst/extdata/qualtrics$
 ^inst/extdata/Logfiles$
+^LICENSE\.md$

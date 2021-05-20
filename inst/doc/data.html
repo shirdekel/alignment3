@@ -166,7 +166,7 @@ pre code {
 
 <h1 class="title toc-ignore">Clean aggregation 3 data</h1>
 <h4 class="author">Shir Dekel</h4>
-<h4 class="date">2021-05-17 17:46:49</h4>
+<h4 class="date">2021-05-17 18:10:59</h4>
 
 </div>
 
@@ -182,6 +182,14 @@ pre code {
   lapply(source)</code></pre>
 <pre><code>## [[1]]
 ## [[1]]$value
+## NULL
+## 
+## [[1]]$visible
+## [1] TRUE
+## 
+## 
+## [[2]]
+## [[2]]$value
 ## function(reference_doc_split) {
 ## 
 ##   reference_doc_split_cleaned_and_filtered &lt;-
@@ -199,12 +207,12 @@ pre code {
 ##   return(reference_doc_split_cleaned_and_filtered)
 ## }
 ## 
-## [[1]]$visible
+## [[2]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[2]]
-## [[2]]$value
+## [[3]]
+## [[3]]$value
 ## function(data_raw) {
 ## 
 ##   masters_filtered &lt;-
@@ -219,12 +227,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[2]]$visible
+## [[3]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[3]]
-## [[3]]$value
+## [[4]]
+## [[4]]$value
 ## function(content, dv_match_regex) {
 ## 
 ##   list(
@@ -240,12 +248,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[3]]$visible
+## [[4]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[4]]
-## [[4]]$value
+## [[5]]
+## [[5]]$value
 ## function(dv_match_pattern) {
 ## 
 ##   dv &lt;-
@@ -267,12 +275,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[4]]$visible
+## [[5]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[5]]
-## [[5]]$value
+## [[6]]
+## [[6]]$value
 ## function(dv_id_match) {
 ## 
 ##   dv_match_pattern &lt;-
@@ -291,12 +299,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[5]]$visible
+## [[6]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[6]]
-## [[6]]$value
+## [[7]]
+## [[7]]$value
 ## function(dv_id_match) {
 ## 
 ##   list(
@@ -306,12 +314,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[6]]$visible
+## [[7]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[7]]
-## [[7]]$value
+## [[8]]
+## [[8]]$value
 ## function(reference_doc_split_cleaned_and_filtered) {
 ## 
 ##   product_regex &lt;-
@@ -365,12 +373,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[7]]$visible
+## [[8]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[8]]
-## [[8]]$value
+## [[9]]
+## [[9]]$value
 ## function() {
 ## 
 ##   dv_match_pattern &lt;-
@@ -388,12 +396,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[8]]$visible
+## [[9]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[9]]
-## [[9]]$value
+## [[10]]
+## [[10]]$value
 ## function(dv_match_pattern) {
 ## 
 ##   dv_match_regex &lt;-
@@ -415,12 +423,12 @@ pre code {
 ##   return(dv_match_regex)
 ## }
 ## 
-## [[9]]$visible
+## [[10]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[10]]
-## [[10]]$value
+## [[11]]
+## [[11]]$value
 ## function(reference_doc_split) {
 ## 
 ##   dv_match &lt;-
@@ -442,12 +450,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[10]]$visible
+## [[11]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[11]]
-## [[11]]$value
+## [[12]]
+## [[12]]$value
 ## function(dv_id, dv_pattern_suffix) {
 ## 
 ##   str_c(
@@ -458,12 +466,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[11]]$visible
+## [[12]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[12]]
-## [[12]]$value
+## [[13]]
+## [[13]]$value
 ## function(
 ##   block,
 ##   dv_id_name,
@@ -484,12 +492,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[12]]$visible
+## [[13]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[13]]
-## [[13]]$value
+## [[14]]
+## [[14]]$value
 ## function(data_clean) {
 ## 
 ##   npv_allocation_correlation &lt;-
@@ -504,12 +512,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[13]]$visible
+## [[14]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[14]]
-## [[14]]$value
+## [[15]]
+## [[15]]$value
 ## function(project) {
 ## 
 ##   case_when(
@@ -522,12 +530,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[14]]$visible
+## [[15]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[15]]
-## [[15]]$value
+## [[16]]
+## [[16]]$value
 ## function(block) {
 ## 
 ##   case_when(
@@ -539,12 +547,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[15]]$visible
+## [[16]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[16]]
-## [[16]]$value
+## [[17]]
+## [[17]]$value
 ## function() {
 ##   drake_plan(
 ##   ##   restricted_values = target(
@@ -599,12 +607,12 @@ pre code {
 ##   )
 ## }
 ## 
-## [[16]]$visible
+## [[17]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[17]]
-## [[17]]$value
+## [[18]]
+## [[18]]$value
 ## function() {
 ## 
 ##   product &lt;-
@@ -635,12 +643,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[17]]$visible
+## [[18]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[18]]
-## [[18]]$value
+## [[19]]
+## [[19]]$value
 ## function(content, product_regex) {
 ## 
 ##   list(
@@ -653,12 +661,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[18]]$visible
+## [[19]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[19]]
-## [[19]]$value
+## [[20]]
+## [[20]]$value
 ## function() {
 ## 
 ##   reference_doc_split_regex &lt;-
@@ -679,12 +687,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[19]]$visible
+## [[20]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[20]]
-## [[20]]$value
+## [[21]]
+## [[21]]$value
 ## function(reference_doc) {
 ## 
 ##   reference_doc_split_regex &lt;-
@@ -705,12 +713,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[20]]$visible
+## [[21]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[21]]
-## [[21]]$value
+## [[22]]
+## [[22]]$value
 ## function() {
 ## 
 ##   reference_doc &lt;-
@@ -721,12 +729,12 @@ pre code {
 ##   return(reference_doc)
 ## }
 ## 
-## [[21]]$visible
+## [[22]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[22]]
-## [[22]]$value
+## [[23]]
+## [[23]]$value
 ## function(masters_renamed) {
 ## 
 ##   names_to &lt;-
@@ -765,12 +773,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[22]]$visible
+## [[23]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[23]]
-## [[23]]$value
+## [[24]]
+## [[24]]$value
 ## function(business_edu) {
 ## 
 ##   business_edu %&gt;%
@@ -781,12 +789,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[23]]$visible
+## [[24]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[24]]
-## [[24]]$value
+## [[25]]
+## [[25]]$value
 ## function(business_exp) {
 ## 
 ##   business_exp %&gt;%
@@ -794,12 +802,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[24]]$visible
+## [[25]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[25]]
-## [[25]]$value
+## [[26]]
+## [[26]]$value
 ## function(project, order) {
 ## 
 ##   case_when(
@@ -812,12 +820,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[25]]$visible
+## [[26]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[26]]
-## [[26]]$value
+## [[27]]
+## [[27]]$value
 ## function(reliability_amount) {
 ## 
 ##   reliability_amount %&gt;%
@@ -826,12 +834,12 @@ pre code {
 ## 
 ## }
 ## 
-## [[26]]$visible
+## [[27]]$visible
 ## [1] FALSE
 ## 
 ## 
-## [[27]]
-## [[27]]$value
+## [[28]]
+## [[28]]$value
 ## function(masters_filtered, dv_match) {
 ## 
 ##   masters_renamed &lt;-
@@ -857,7 +865,7 @@ pre code {
 ## 
 ## }
 ## 
-## [[27]]$visible
+## [[28]]$visible
 ## [1] FALSE</code></pre>
 <p>Clean data</p>
 <pre class="r"><code>data_raw &lt;-
